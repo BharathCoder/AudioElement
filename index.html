@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioElement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/audioelement.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/audioelement.png" height="50px" width="50px" style="margin-right: 15px;"> 
+            <h1 class="logo-text">AudioElement</h1>
+        </div>
+    </nav>
+    <nav class="sidebar">
+        <a href="#" class="link"><img src="./img/img.icons8.png"></a>
+        <a href="#music" class="link"><img src="./img/audioelement.png"></a>
+        <a href="#music2" class="link"><img src="./img/playlist.png"></a>
+        <a href="user.html" class="link"><img src="./img/user-bk.png"></a>
+    </nav>
+    <section class="carousel background">
+        <h1 class="text-center">Best music on the planet</h1>
+    </section>
+    <section class="music" id="music">
+        <section class="items-4">
+            <!-- mcard1 -->
+        <div class="music-card">
+            <div class="actions">
+                <button class="play"><i id="0" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+
+        <div class="music-card">
+            <div class="actions">
+                <button class="play"><i id="1" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+
+        <div class="music-card">
+            <div class="actions">
+                <button class="play"><i id="2" class="bi songPlay bi-play-fill"></i></button>   
+                <span class="title"></span>
+            </div>
+        </div>
+
+        <div class="music-card">
+            <div class="actions">
+                <button class="play"><i id="3" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+    </section>
+    <section class="items-4" id="music2">
+        <div class="music-card-2">
+            <div class="actions">
+                <button class="play"><i id="4" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+
+            </div>
+        </div>
+
+        <div class="music-card-2">
+            <div class="actions">
+                <button class="play"><i id="5" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+        <div class="music-card-2">
+            
+            <div class="actions">
+                <button class="play"><i id="6" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+                
+            </div>
+        </div>
+        <div class="music-card-2">
+            
+            <div class="actions">
+                <button class="play"><i id="7" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+                
+            </div>
+        </div>
+    </section>
+    <section class="items-4">
+        <div class="music-card-3">
+            <div class="actions">
+                <button class="play"><i id="8" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+        
+        <div class="music-card-3">
+            <div class="actions">
+                <button class="play"><i id="9" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+
+        <div class="music-card-3">
+            <div class="actions">
+                <button class="play"><i id="10" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+
+        <div class="music-card-3">
+            <div class="actions">
+                <button class="play"><i id="11" class="bi songPlay bi-play-fill"></i></button>
+                <span class="title"></span>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="player">
+        <div class="img">
+            <img id="img" src="./covers/sigma.png" height="50px" width="50px" style="margin-right: 15px;border-radius: 8px;">
+            <div class="nmae">
+                <span id="maintitle">Vendetta</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="master"><i id="prev" class="bi bi-skip-start-fill"></i></button>
+            <button class="master"><i id="mPlay" class="bi bi-play-fill"></i></button>
+            <button class="master"><i id="next" class="bi bi-skip-end-fill"></i></button>
+        </div>
+        <div class="seek">
+            <input type="range" value="100" id="seekBar">
+        </div>
+        <div class="hidden">
+            <div class="buttons">
+                <button class="master"><i class="vol bi bi-volume-up-fill"></i></button>
+            </div>
+            <div class="volume">
+                <input type="range" id="volume" min="0" max="100" value="80">
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>

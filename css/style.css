@@ -1,0 +1,312 @@
+*{
+    font-family: 'Poppins';
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: #0367b9;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar{
+    background-color: black;
+    padding: 1em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+}
+img{
+    border-radius: 8px;
+}
+.link > img{
+    background-color: inherit;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.link > img:active{
+    background-color: #9c9c9c;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.background{
+    background: url(https://wallpaperaccess.com/full/2030096.jpg) rgba(0,0,0,0.2);
+    background-size: cover;
+    background-blend-mode: darken;
+    /*use .. to get out of folder*/
+}
+.carousel{
+    height: 40vh;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.music{
+    background-color: black;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.items-4{
+    padding: 0;
+    background-color: black;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+.actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.music-card{
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: self-end;
+    justify-content: flex-start;
+    height: 265px;
+    width: 265px;
+}
+.music-card-2{
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: self-end;
+    justify-content: flex-start;
+    height: 265px;
+    width: 265px;
+}
+.music-card-3{
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: self-end;
+    justify-content: flex-start;
+    height: 265px;
+    width: 265px;
+}
+.play{
+    background-color: #0367b9;
+    border: none;
+    border-radius: 100%;
+    padding: 1px 6px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+.master{
+    background-color: #0367b9;
+    border: none;
+    border-radius: 100%;
+    padding: 1px 9px;
+    font-size: 1.7em;
+    text-align: center;
+    cursor: pointer;
+}
+.master:active{
+    background-color: #0367b9;
+    border: none;
+    border-radius: 100%;
+    padding: 1px 9px;
+    font-size: 1.7em;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play:active{
+    background-color: #0367b9;
+    border: none;
+    border-radius: 100%;
+    padding: 1px 6px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.player{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding: 1em;
+    position: sticky;
+    bottom: 0;
+}
+.hidden{
+    display: flex;
+    border-radius: 8px; 
+    padding: 1em; 
+    background: #171618; 
+    gap: 5px; 
+    align-items: center; 
+    justify-content: center;
+}
+#volume{
+    width: 10vw;
+}
+input[type=range]{
+    width: 15vw;
+    outline: none;
+    background-color: #0367b9;
+}
+.animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.line{
+    height: 25px;
+    width: 4px;
+    border-radius: 4px;
+    background-color: white;
+    animation: play 0.8s linear infinite;
+}
+.music-card:nth-child(1){
+    background-image: url(../covers/sigma.png);
+    background-size: cover;
+}
+.music-card:nth-child(2){
+    background-image: url(../covers/veyron.jpg);
+    background-size: cover;
+}
+.music-card:nth-child(3){
+    background-image: url(../covers/believer.jpg);
+    background-size: cover;
+}
+.music-card:nth-child(4){
+    background-image: url(../covers/enemy.jpg);
+    background-size: cover;
+}
+.music-card-2:nth-child(1){
+    background-image: url(../covers/gangsta.png);
+    background-size: cover;
+}
+.music-card-2:nth-child(2){
+    background-image: url(../covers/bones.jpg);
+    background-size: cover;
+}
+.music-card-2:nth-child(3){
+    background-image: url(../covers/rollin.jpg);
+    background-size: cover;
+}
+.music-card-2:nth-child(4){
+    background-image: url(../covers/neon.jpg);
+    background-size: cover;
+}
+.music-card-3:nth-child(1){
+    background-image: url(../covers/warriors.jpg);
+    background-size: cover;
+}
+.music-card-3:nth-child(2){
+    background-image: url(../covers/heymama.png);
+    background-size: cover;
+}
+.music-card-3:nth-child(3){
+    background-image: url(../covers/fearless.jpeg);
+    background-size: cover;
+}
+.music-card-3:nth-child(4){
+    background-image: url(../covers/vendetta.jpg);
+    background-size: cover;
+}
+
+@media(max-width:450px){
+    .sidebar{
+        display: none;
+    }
+    .player{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .carousel{
+        height: 20vh;
+    }
+    .items-4{
+        padding-left: 1.7em;
+    }
+    .master{
+        background-color: #0367b9;
+        border: none;
+        border-radius: 100%;
+        padding: 0px 6px;
+        font-size: 1.4em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .master:active{
+        background-color: #0367b9;
+        border: none;
+        border-radius: 100%;
+        padding: 0px 6px;
+        font-size: 1.4em;
+        text-align: center;
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+    input[type=range]{
+        width: 75vw;
+    }
+}
+@media(max-width:740px){
+    .sidebar{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+}

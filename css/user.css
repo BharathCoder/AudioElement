@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+
+}
+.main{
+    background-color: #171618;
+    padding: 4em;
+    border-radius: 8px;
+    margin: 1em;
+    margin-left: 8em;
+}
+.text-center{
+    text-align: left;
+    font-size: 2em;
+    text-transform: none;
+}
+.round{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
