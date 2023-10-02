@@ -167,3 +167,13 @@ rocker.addEventListener('change', ()=>{
     }
 })
 
+audioElement.addEventListener('timeupdate', ()=>{
+    if(audioElement.currentTime = audioElement.duration){
+        songIndex+=1
+        audioElement.src = `music/${songIndex+1}.mp3`
+        audioElement.currentTime = 0;
+        if(songIndex>=12){
+            songIndex = 0
+        }
+    }
+})
